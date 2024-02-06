@@ -6,7 +6,7 @@
     <link href="Style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<div class="container">
+<div name="container" align="center">
     <div class="content">
         <h1 align="center">La Pizsaria</h1>
         <form>
@@ -14,11 +14,11 @@
                 <legend>Customer:</legend>
                 <div class="row">
                     <div>
-                        <label for="firstname">First</label>
+                        <label for="firstname">First Name</label>
                         <input id="firstname" name="first_name" type="text">
                     </div>
                     <div>
-                        <label for="lastname">Last</label>
+                        <label for="lastname">Last Name</label>
                         <input id="lastname" name="last_name" type="text">
                     </div>
                 </div>
@@ -43,23 +43,23 @@
                     <legend>Pizza:</legend>
                     <div>
                         <input type="radio" id="cheese" name="pizza">
-                        <label for="cheese">Cheese</label>
+                        <label for="cheese">Cheese - Starting at $18.40</label>
                     </div>
                     <div>
                         <input type="radio" id="Pepperoni" name="pizza">
-                        <label for="Pepperoni">Pepperoni</label>
+                        <label for="Pepperoni">Pepperoni - Starting at $19.99</label>
                     </div>
                     <div>
                         <input type="radio" id="hawaiian" name="pizza">
-                        <label for="hawaiian">Hawaiian</label>
+                        <label for="hawaiian">Hawaiian - Starting at $20.40</label>
                     </div>
                     <div>
                         <input type="radio" id="sausage" name="pizza">
-                        <label for="sausage">Sausage</label>
+                        <label for="sausage">Sausage - Starting at $22.99</label>
                     </div>
                     <div>
                         <input type="radio" id="vegetable" name="pizza">
-                        <label for="vegetable">Vegetable</label>
+                        <label for="vegetable">Vegetable - Starting at $22.99</label>
                     </div>
                 </fieldset>
             </div>
@@ -76,15 +76,19 @@
                             </div>
                             <div>
                                 <input type="radio" id="medium" name="size">
-                                <label for="medium">Medium</label>
+                                <label for="medium">Medium - Adds $2.30</label>
                             </div>
                             <div>
                                 <input type="radio" id="large" name="size">
-                                <label for="large">Large</label>
+                                <label for="large">Large - Adds $3.99</label>
                             </div>
                             <div>
                                 <input type="radio" id="x-large" name="size">
-                                <label for="x-large">X-Large</label>
+                                <label for="x-large">X-Large - Adds $5.00</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="xx-large" name="size">
+                                <label for="xx-large">XX-Large - Adds $6.20</label>
                             </div>
                         </fieldset>
                     </div>
@@ -97,47 +101,63 @@
                     <fieldset>
                         <legend>Extras:</legend>
                         <div>
-                            <input type="checkbox" id="poni" name="poni" value="poni">
-                            <label for="poni">Pepperoni</label>
+                            <input type="checkbox" id="poni" name="extras" value="poni">
+                            <label for="poni">Pepperoni - Adds $0.60</label>
                         </div>
                         <div>
-                            <input type="checkbox" id="pine" name="pine" value="pine">
-                            <label for="pine">Pinapple</label>
+                            <input type="checkbox" id="pine" name="extras" value="pine">
+                            <label for="pine">Pinapple - Adds $1.00</label>
                         </div>
                         <div>
-                            <input type="checkbox" id="mushrooms" name="mushrooms" value="mushrooms">
-                            <label for="mushrooms">Mushroom</label>
+                            <input type="checkbox" id="mushrooms" name="extras" value="mushrooms">
+                            <label for="mushrooms">Mushroom - Adds $0.90</label>
                         </div>
                         <div>
-                            <input type="checkbox" id="sausage" name="sausage" value="sausage">
-                            <label for="sausage">Sausage</label>
+                            <input type="checkbox" id="sausage" name="extras" value="sausage">
+                            <label for="sausage">Sausage - Adds $1.80</label>
                         </div>
                         <div>
-                            <input type="checkbox" id="olives" name="olives" value="olives">
-                            <label for="olives">Olives</label>
+                            <input type="checkbox" id="olives" name="extras" value="olives">
+                            <label for="olives">Olives - Adds $1.50</label>
                         </div>
                         <div>
-                            <input type="checkbox" id="greenPeppers" name="greenPepper" value="greenPepper">
-                            <label for="greenPeppers">Green Bell Peppers</label>
+                            <input type="checkbox" id="greenPeppers" name="extras" value="greenPepper">
+                            <label for="greenPeppers">Green Bell Peppers - Adds $1.30</label>
                         </div>
                         <div>
-                            <input type="checkbox" id="bananaPepper" name="bananaPepper" value="bananaPepper">
-                            <label for="bananaPepper">Banana Peppers</label>
+                            <input type="checkbox" id="bananaPepper" name="extras" value="bananaPepper">
+                            <label for="bananaPepper">Banana Peppers - Adds $1.99</label>
                         </div>
                         <div>
-                            <input type="checkbox" id="jalapenoPepper" name="jalapenoPepper" value="jalapenoPepper">
-                            <label for="jalapenoPepper">Jalapeño Peppers</label>
+                            <input type="checkbox" id="jalapenoPepper" name="extras" value="jalapenoPepper">
+                            <label for="jalapenoPepper">Jalapeño Peppers - Adds $1.60</label>
                         </div>
                         <div>
-                            <input type="checkbox" id="romaToma" name="romaToma" value="romaToma">
-                            <label for="romaToma">Roma Tomatoes</label>
+                            <input type="checkbox" id="romaToma" name="extras" value="romaToma">
+                            <label for="romaToma">Roma Tomatoes - Adds $1.90</label>
                         </div
                     </fieldset>
-                    <button type="button" onclick="alert('Free today for our Grand Opening!')">Calculate Cost</button>
-                    <button type="submit">Submit Order</button>
                 </div>
             </div>
         </form>
+        <form>
+            <fieldset>
+                <div>
+                    <label for="container">Delivery Driver Tip?</label>
+                    <select name="container" id="container">
+                        <option value="lots">$20.00</option>
+                        <option value="more">$18.00</option>
+                        <option value="fewer">$15.00</option>
+                        <option value="less">$10.00</option>
+                        <option value="little">$8.00</option>
+                        <option value="poor">$5.00</option>
+                        <option value="ihateworkers">No (I'm a useless memeber of society)</option>
+                    </select>
+                </div>
+            </fieldset>
+        </form>
+        <button type="button" onclick="alert('Free today for our Grand Opening!')">Calculate Cost</button>
+        <button type="submit">Submit Order</button>
     </div>
 </div>
 </body>
